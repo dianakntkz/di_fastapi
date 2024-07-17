@@ -1,14 +1,2 @@
-from fastapi import FastAPI
-
-
-app==FastAPI()
-
-
-@app.get("/")
-def root():
-    return {"message": "Hello World"}
-
-@app.post("user/signup")
-def create_user(user: UserSchema= Body(...)):
-    users.append(user)
-    return signJWT(user.email)
+fastapi
+uvicorn
